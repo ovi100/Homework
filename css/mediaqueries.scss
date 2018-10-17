@@ -54,7 +54,7 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
 
 
 @include respond-to($large-desktop){
-  .blog-wrapper{width: 60%;}
+  .blog-wrapper{width: 85%;}
 }
 
 @include respond-to($tablet-landscape){

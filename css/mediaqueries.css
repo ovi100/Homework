@@ -24,7 +24,7 @@
 */
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
   .blog-wrapper {
-    width: 60%; } }
+    width: 85%; } }
 @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
   .home-slider #main-slider img {
     height: 370px; }
