@@ -54,7 +54,18 @@ $phone-portrait: '(min-width: 320px) and (max-width: 479px)';
 
 
 @include respond-to($large-desktop){
-  .blog-wrapper{width: 85%;}
+
+  .header{
+    width: 53.6%;
+    margin: auto;
+  }
+
+  .home-slider{
+    width: 53.6%;
+    margin: auto;
+  }
+
+  .blog-wrapper{width: 50%;}
 }
 
 @include respond-to($tablet-landscape){
