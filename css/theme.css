@@ -77,7 +77,7 @@ a {
 .section-header {
   border-bottom: 1px dotted #000;
   margin-bottom: 30px; }
-  .section-header h4 {
+  .section-header h5 {
     width: 150px;
     background: #f1f1f1;
     border-left: 5px solid #4F7D8E;
@@ -318,77 +318,132 @@ a {
 .blog-wrapper {
   width: 85%;
   margin: 0 auto; }
-  .blog-wrapper .main-content .about-us .about-button a {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
-    background-clip: padding-box;
-    font-size: 13px;
-    padding: 8px;
-    text-transform: uppercase; }
-  .blog-wrapper .main-content .post {
-    position: relative;
-    background: #fff;
-    -moz-box-shadow: 0 0 2px #ddd;
-    -webkit-box-shadow: 0 0 2px #ddd;
-    box-shadow: 0 0 2px #ddd; }
-    .blog-wrapper .main-content .post .post-photo {
-      height: 300px;
-      overflow: hidden;
-      position: relative; }
-      .blog-wrapper .main-content .post .post-photo img {
-        max-width: none;
-        width: calc(100% + 50px);
-        opacity: 1;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        filter: alpha(opacity=100);
+  .blog-wrapper .main-content {
+    /*CSS For Sevice section*/ }
+    .blog-wrapper .main-content .about-us .about-button a {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      background-clip: padding-box;
+      font-size: 13px;
+      padding: 8px;
+      text-transform: uppercase; }
+    .blog-wrapper .main-content .service {
+      text-align: center; }
+      .blog-wrapper .main-content .service .text-section {
+        color: #2C2C2C;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        text-align: justify; }
+      .blog-wrapper .main-content .service .service-content {
+        text-align: center;
+        padding-top: 30px; }
+        .blog-wrapper .main-content .service .service-content .col-md-4 {
+          padding-left: 0;
+          padding-right: 0; }
+        .blog-wrapper .main-content .service .service-content .service-item {
+          background: #fff;
+          -moz-box-shadow: 0 0 10px #ddd;
+          -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+          padding: 50px 25px 30px 25px; }
+          .blog-wrapper .main-content .service .service-content .service-item span {
+            background: transparent;
+            border: 1px solid #1F79C2;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            background-clip: padding-box;
+            color: #1F79C2;
+            font-size: 22px;
+            padding: 20px; }
+          .blog-wrapper .main-content .service .service-content .service-item .service-content-title {
+            font-weight: 400;
+            padding: 20px 0 15px 0;
+            text-transform: uppercase; }
+          .blog-wrapper .main-content .service .service-content .service-item:hover span {
+            background: #1F79C2;
+            color: #fff;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+        .blog-wrapper .main-content .service .service-content .service-item-middel {
+          -moz-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+          position: relative;
+          -webkit-transform: translate(0, -15px);
+          -moz-transform: translate(0, -15px);
+          -o-transform: translate(0, -15px);
+          -ms-transform: translate(0, -15px);
+          transform: translate(0, -15px);
+          z-index: 3; }
+    .blog-wrapper .main-content .post {
+      position: relative;
+      background: #fff;
+      -moz-box-shadow: 0 0 2px #ddd;
+      -webkit-box-shadow: 0 0 2px #ddd;
+      box-shadow: 0 0 2px #ddd; }
+      .blog-wrapper .main-content .post .post-photo {
+        height: 300px;
+        overflow: hidden;
+        position: relative; }
+        .blog-wrapper .main-content .post .post-photo img {
+          max-width: none;
+          width: calc(100% + 50px);
+          opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          filter: alpha(opacity=100);
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+      .blog-wrapper .main-content .post .post-text {
+        text-align: center; }
+        .blog-wrapper .main-content .post .post-text .post-title h2 {
+          font-weight: 600; }
+        .blog-wrapper .main-content .post .post-text .post-category label {
+          padding: 0 5px; }
+          .blog-wrapper .main-content .post .post-text .post-category label a {
+            color: #fff;
+            font-size: 12px; }
+        .blog-wrapper .main-content .post .post-text .post-info {
+          color: #757575;
+          font-size: 12px; }
+          .blog-wrapper .main-content .post .post-text .post-info a {
+            color: #757575; }
+          .blog-wrapper .main-content .post .post-text .post-info span {
+            padding-left: 5px;
+            padding-right: 5px; }
+        .blog-wrapper .main-content .post .post-text .post-description {
+          text-align: left; }
+        .blog-wrapper .main-content .post .post-text .post-footer a {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px;
+          background-clip: padding-box;
+          padding: 8px;
+          text-transform: uppercase; }
+        .blog-wrapper .main-content .post .post-text .post-footer .post-button a {
+          font-size: 12px; }
+        .blog-wrapper .main-content .post .post-text .post-footer .post-share ul li {
+          display: inline-block; }
+      .blog-wrapper .main-content .post:hover .post-photo img {
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: alpha(opacity=70);
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
-    .blog-wrapper .main-content .post .post-text {
-      text-align: center; }
-      .blog-wrapper .main-content .post .post-text .post-title h2 {
-        font-weight: 600; }
-      .blog-wrapper .main-content .post .post-text .post-category label {
-        padding: 0 5px; }
-        .blog-wrapper .main-content .post .post-text .post-category label a {
-          color: #fff;
-          font-size: 12px; }
-      .blog-wrapper .main-content .post .post-text .post-info {
-        color: #757575;
-        font-size: 12px; }
-        .blog-wrapper .main-content .post .post-text .post-info a {
-          color: #757575; }
-        .blog-wrapper .main-content .post .post-text .post-info span {
-          padding-left: 5px;
-          padding-right: 5px; }
-      .blog-wrapper .main-content .post .post-text .post-description {
-        text-align: left; }
-      .blog-wrapper .main-content .post .post-text .post-footer a {
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
-        background-clip: padding-box;
-        padding: 8px;
-        text-transform: uppercase; }
-      .blog-wrapper .main-content .post .post-text .post-footer .post-button a {
-        font-size: 12px; }
-      .blog-wrapper .main-content .post .post-text .post-footer .post-share ul li {
-        display: inline-block; }
-    .blog-wrapper .main-content .post:hover .post-photo img {
-      opacity: 0.7;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-      filter: alpha(opacity=70);
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      transform: translate3d(-40px, 0, 0); }
+        transition: all 0.5s ease;
+        transform: translate3d(-40px, 0, 0); }
   .blog-wrapper .side-content {
     position: sticky;
     top: 0; }

@@ -183,7 +183,7 @@ a{
 	border-bottom: 1px dotted #000;
     margin-bottom: 30px;
 
-	h4{
+	h5{
 	    width: 150px;
 	    background: #f1f1f1;
 	    border-left: 5px solid #4F7D8E;
@@ -516,6 +516,67 @@ a{
 				}
     		}
     	}
+
+    	/*CSS For Sevice section*/
+
+		.service{
+		  	text-align: center;
+
+			.text-section{
+		      	color: #2C2C2C;
+			    letter-spacing: 1px;
+			    margin-bottom: 40px;
+			    text-align: justify;
+			}
+
+			.service-content{
+			  	text-align: center;
+			  	padding-top: 30px;
+
+			  	.col-md-4{
+				  	padding-left: 0;
+				  	padding-right: 0;
+				}
+
+			  	.service-item{
+				  	background: $wcolor;
+				  	@include box-shadow(0 0 10px #ddd);
+				  	padding: 50px 25px 30px 25px;
+
+				  	span{
+					  	background: transparent;
+					  	border: 1px solid #1F79C2;
+					  	@include border-radius(50%);
+					  	color: #1F79C2;
+					  	font-size: 22px;
+					  	padding: 20px;
+				  	}
+
+				  	.service-content-title{
+					  	font-weight: 400;
+					  	padding: 20px 0 15px 0;
+					  	text-transform: uppercase;
+					}
+
+				  	&:hover{
+				  		span{
+			  				background: #1F79C2;
+						  	color: $wcolor;
+							@include transition(all,0.3s,ease);
+				  		}
+				  	}
+				}
+
+				.service-item-middel{
+				  	@include box-shadow(0 40px 40px 0 rgba(0,0,0,0.3));
+				  	position: relative;
+				  	@include transform(translate(0,-15px));
+				  	z-index: 3;
+				}
+			}
+
+		}
+
     	.post{
     		position: relative;
     		background:$wcolor;
