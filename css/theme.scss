@@ -184,11 +184,12 @@ a{
     margin-bottom: 30px;
 
 	h5{
-	    width: 150px;
+	    width: 200px;
 	    background: #f1f1f1;
 	    border-left: 5px solid #4F7D8E;
 	    font-weight: 600;
 	    padding: 8px 20px;
+	    text-align: left;
 	    text-transform: capitalize;
         position: relative;
 	    top: 28px;
@@ -510,19 +511,7 @@ a{
 
     .main-content{
 
-    	.about-us{
-    		.about-button{
-    			a {
-					@include border-radius(3px);
-				    font-size: 13px;
-					padding: 8px;
-					text-transform: uppercase;
-				}
-    		}
-    	}
-
     	/*CSS For Sevice section*/
-
 		.service{
 		  	text-align: center;
 
@@ -578,7 +567,23 @@ a{
 				  	z-index: 3;
 				}
 			}
+		}
 
+		// CSS For Program Section
+		.program{
+			.program-content{
+				.program-item{
+					@include box-shadow(-1px 4px 8px #ddd);
+
+					.text{
+						position: relative;
+					    top: -30px;
+					    width: 85%;
+					    background: $wcolor;
+					    margin: auto;
+					}
+				}
+			}
 		}
 
     	.post{
@@ -662,16 +667,34 @@ a{
     			}
     		}
     	}
+
+    	// CSS For Gallery
+    	.gallery{
+    		.gallery-content{
+    			.row{
+    				.col-12{padding: 0;}
+    			}
+    		}
+    	}
     }
 
     .side-content{
     	position: sticky;
     	top: 0;
-    	.latest-post{
+
+    	.side-header{
+    		background: #f1f1f1;
+		    border-left: 5px solid #4F7D8E;
+		    font-weight: 600;
+		    padding: 8px 20px;
+		    text-transform: capitalize;
+    	}
+
+    	.intro{
     		background: $wcolor;
     		box-shadow: 0 0 2px #ddd;
 
-    		.lpost-item{
+    		.intro-details{
     			border-bottom: 1px solid #ddd;
     			.lpost-photo{
     				width: 100%;
@@ -693,37 +716,6 @@ a{
     		}
     	}
 
-    	.tag{
-    		background: $wcolor;
-    		box-shadow: 0 0 2px #ddd;
-
-    		.tag-link{
-    			a{
-    				display: inline-block;
-				    margin-top: 5px;
-				    padding: 3px 10px;
-				    text-transform: capitalize;
-    			}
-    		}
-    	}
-
-    	.instagram{
-    		background: $wcolor;
-    		box-shadow: 0 0 2px #ddd;
-
-    		.instagram-content{
-    			width: 95%;
-    			padding-left: 6px;
-
-    			.row{
-    				margin-bottom: 5px;
-	    			.col-4{
-	    				padding-right:0;
-	    				padding-left:10px;
-	    			}
-	    		}
-    		}
-    	}
 
     	.category{
     		background: $wcolor;
@@ -807,67 +799,6 @@ a{
 
 
 // CSS For Footer Section
-
-.extra-footer{
-	background: $wcolor;
-
-	.section-content{
-	    border-top: 1px solid #ddd;
-	    border-bottom: 1px solid #ddd;
-
-	    .footer-header{
-    		max-width: 135px;
-		    background: #fff;
-		    position: relative;
-		    top: -18px;
-		    text-transform: capitalize;
-    	}
-
-	    .fpost{
-	    	.fpost-item{
-	    		.fpost-photo{
-	    			width:30%;
-	    		}
-	    		.fpost-text{
-	    			h6{
-	    				font-size: 14px;
-    					font-weight: 600;
-    					margin-top: 9px;
-    					margin-bottom: 0;
-
-    					a{
-    						&:hover{color:$bcolor;}
-    					}
-	    			}
-
-	    			time{
-	    				color: #515151;
-					    font-size: 10px;
-					    text-transform: uppercase;
-	    			}
-	    		}
-	    	}
-	    }
-
-	    .newsletter{
-
-    		.form-control{
-    			border-radius: 0;
-    			border-color: #757575;
-
-    			@include placeholder{
-    				text-align: center;
-    			}
-    		}
-
-    		button{
-    			cursor: pointer;
-    			font-size: 14px;
-    			text-transform: uppercase;
-    		}
-    	}
-	}
-}
 
 .footer{
     background: $wcolor;

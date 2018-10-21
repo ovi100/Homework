@@ -78,11 +78,12 @@ a {
   border-bottom: 1px dotted #000;
   margin-bottom: 30px; }
   .section-header h5 {
-    width: 150px;
+    width: 200px;
     background: #f1f1f1;
     border-left: 5px solid #4F7D8E;
     font-weight: 600;
     padding: 8px 20px;
+    text-align: left;
     text-transform: capitalize;
     position: relative;
     top: 28px; }
@@ -325,15 +326,6 @@ a {
   margin: 0 auto; }
   .blog-wrapper .main-content {
     /*CSS For Sevice section*/ }
-    .blog-wrapper .main-content .about-us .about-button a {
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
-      background-clip: padding-box;
-      font-size: 13px;
-      padding: 8px;
-      text-transform: uppercase; }
     .blog-wrapper .main-content .service {
       text-align: center; }
       .blog-wrapper .main-content .service .text-section {
@@ -387,6 +379,16 @@ a {
           -ms-transform: translate(0, -15px);
           transform: translate(0, -15px);
           z-index: 3; }
+    .blog-wrapper .main-content .program .program-content .program-item {
+      -moz-box-shadow: -1px 4px 8px #ddd;
+      -webkit-box-shadow: -1px 4px 8px #ddd;
+      box-shadow: -1px 4px 8px #ddd; }
+      .blog-wrapper .main-content .program .program-content .program-item .text {
+        position: relative;
+        top: -30px;
+        width: 85%;
+        background: #fff;
+        margin: auto; }
     .blog-wrapper .main-content .post {
       position: relative;
       background: #fff;
@@ -449,41 +451,30 @@ a {
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         transform: translate3d(-40px, 0, 0); }
+    .blog-wrapper .main-content .gallery .gallery-content .row .col-12 {
+      padding: 0; }
   .blog-wrapper .side-content {
     position: sticky;
     top: 0; }
-    .blog-wrapper .side-content .latest-post {
+    .blog-wrapper .side-content .side-header {
+      background: #f1f1f1;
+      border-left: 5px solid #4F7D8E;
+      font-weight: 600;
+      padding: 8px 20px;
+      text-transform: capitalize; }
+    .blog-wrapper .side-content .intro {
       background: #fff;
       box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .latest-post .lpost-item {
+      .blog-wrapper .side-content .intro .intro-details {
         border-bottom: 1px solid #ddd; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-photo {
+        .blog-wrapper .side-content .intro .intro-details .lpost-photo {
           width: 100%; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-text h6 a:hover {
+        .blog-wrapper .side-content .intro .intro-details .lpost-text h6 a:hover {
           color: #000; }
-        .blog-wrapper .side-content .latest-post .lpost-item .lpost-text time {
+        .blog-wrapper .side-content .intro .intro-details .lpost-text time {
           color: #757575;
           font-size: 10px;
           text-transform: uppercase; }
-    .blog-wrapper .side-content .tag {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .tag .tag-link a {
-        display: inline-block;
-        margin-top: 5px;
-        padding: 3px 10px;
-        text-transform: capitalize; }
-    .blog-wrapper .side-content .instagram {
-      background: #fff;
-      box-shadow: 0 0 2px #ddd; }
-      .blog-wrapper .side-content .instagram .instagram-content {
-        width: 95%;
-        padding-left: 6px; }
-        .blog-wrapper .side-content .instagram .instagram-content .row {
-          margin-bottom: 5px; }
-          .blog-wrapper .side-content .instagram .instagram-content .row .col-4 {
-            padding-right: 0;
-            padding-left: 10px; }
     .blog-wrapper .side-content .category {
       background: #fff;
       box-shadow: 0 0 2px #ddd; }
@@ -533,44 +524,6 @@ a {
     .blog-wrapper .side-content .ad, .blog-wrapper .side-content .facebook {
       background: #fff;
       box-shadow: 0 0 2px #ddd; }
-
-.extra-footer {
-  background: #fff; }
-  .extra-footer .section-content {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd; }
-    .extra-footer .section-content .footer-header {
-      max-width: 135px;
-      background: #fff;
-      position: relative;
-      top: -18px;
-      text-transform: capitalize; }
-    .extra-footer .section-content .fpost .fpost-item .fpost-photo {
-      width: 30%; }
-    .extra-footer .section-content .fpost .fpost-item .fpost-text h6 {
-      font-size: 14px;
-      font-weight: 600;
-      margin-top: 9px;
-      margin-bottom: 0; }
-      .extra-footer .section-content .fpost .fpost-item .fpost-text h6 a:hover {
-        color: #000; }
-    .extra-footer .section-content .fpost .fpost-item .fpost-text time {
-      color: #515151;
-      font-size: 10px;
-      text-transform: uppercase; }
-    .extra-footer .section-content .newsletter .form-control {
-      border-radius: 0;
-      border-color: #757575; }
-      .extra-footer .section-content .newsletter .form-control.placeholder {
-        text-align: center; }
-      .extra-footer .section-content .newsletter .form-control:-moz-placeholder {
-        text-align: center; }
-      .extra-footer .section-content .newsletter .form-control::-webkit-input-placeholder {
-        text-align: center; }
-    .extra-footer .section-content .newsletter button {
-      cursor: pointer;
-      font-size: 14px;
-      text-transform: uppercase; }
 
 .footer {
   background: #fff;
