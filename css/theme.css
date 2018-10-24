@@ -360,25 +360,31 @@ a {
             font-weight: 400;
             padding: 20px 0 15px 0;
             text-transform: uppercase; }
-          .blog-wrapper .main-content .service .service-content .service-item:hover span {
-            background: #1F79C2;
-            color: #fff;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-        .blog-wrapper .main-content .service .service-content .service-item-middel {
-          -moz-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
-          -webkit-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
-          position: relative;
-          -webkit-transform: translate(0, -15px);
-          -moz-transform: translate(0, -15px);
-          -o-transform: translate(0, -15px);
-          -ms-transform: translate(0, -15px);
-          transform: translate(0, -15px);
-          z-index: 3; }
+          .blog-wrapper .main-content .service .service-content .service-item:hover {
+            -moz-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.3);
+            cursor: default;
+            position: relative;
+            -webkit-transform: translate(0, -15px);
+            -moz-transform: translate(0, -15px);
+            -o-transform: translate(0, -15px);
+            -ms-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            z-index: 3; }
+            .blog-wrapper .main-content .service .service-content .service-item:hover span {
+              background: #1F79C2;
+              color: #fff;
+              -webkit-transition: all 0.3s ease;
+              -moz-transition: all 0.3s ease;
+              -ms-transition: all 0.3s ease;
+              -o-transition: all 0.3s ease;
+              transition: all 0.3s ease; }
     .blog-wrapper .main-content .program .program-content .program-item {
       -moz-box-shadow: -1px 4px 8px #ddd;
       -webkit-box-shadow: -1px 4px 8px #ddd;
@@ -453,6 +459,59 @@ a {
         transform: translate3d(-40px, 0, 0); }
     .blog-wrapper .main-content .gallery .gallery-content .row .col-12 {
       padding: 0; }
+    .blog-wrapper .main-content .gallery .gallery-content .row .gallery-item .gal-photo {
+      position: relative; }
+    .blog-wrapper .main-content .gallery .gallery-content .row .gallery-item .gal-icon {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.19);
+      line-height: 195px;
+      text-align: center;
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      transform: scale(0.5);
+      visibility: hidden; }
+      .blog-wrapper .main-content .gallery .gallery-content .row .gallery-item .gal-icon i {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        background-clip: padding-box;
+        color: #000;
+        display: inline-block;
+        line-height: 50px;
+        text-align: center; }
+    .blog-wrapper .main-content .gallery .gallery-content .row .gallery-item:hover .gal-icon {
+      background: rgba(0, 0, 0, 0.25);
+      visibility: visible;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      .blog-wrapper .main-content .gallery .gallery-content .row .gallery-item:hover .gal-icon i {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.6s ease;
+        -moz-transition: all 0.6s ease;
+        -ms-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
   .blog-wrapper .side-content {
     position: sticky;
     top: 0; }
