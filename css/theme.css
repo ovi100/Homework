@@ -9,7 +9,8 @@ html {
 
 body {
   background: url(../images/sitebg.gif) repeat-y center top scroll;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden; }
 
 ul li {
   list-style: none; }
@@ -322,7 +323,7 @@ a {
 
 /* CSS For Blog Post Section */
 .blog-wrapper {
-  width: 70%;
+  width: 74%;
   margin: 0 auto; }
   .blog-wrapper .main-content {
     /*CSS For Sevice section*/ }
@@ -585,6 +586,8 @@ a {
       box-shadow: 0 0 2px #ddd; }
 
 .footer {
+  width: 74.6%;
+  margin: auto;
   background: #fff;
   color: #000;
   text-align: center; }
