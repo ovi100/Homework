@@ -681,6 +681,16 @@ a{
     			}
     		}
     	}
+		
+		.fancybox-container{
+			.fancybox-inner{
+				.fancybox-caption-wrap{
+		    		.fancybox-caption{
+		    			visibility: visible;
+		    		}
+		    	}
+			}
+		}
     }
 
     .side-content{

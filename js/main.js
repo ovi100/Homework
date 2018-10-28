@@ -1,6 +1,6 @@
 /*------------------------------------
  *Author:MD ABU SAYED
- *Template:Blog Theme 2
+ *Template:Sreda
  *Version:1.0
  *-------------------------------------
  */
@@ -8,8 +8,9 @@
 
 $(document).ready(function(){
 
-	$('[data-fancybox]').fancybox({
+	$('[data-fancybox="images"]').fancybox({
 	  protect: true,
+	  preventCaptionOverlap: true,
 	  buttons : [
 	    'zoom',
 	    'thumbs',
@@ -17,6 +18,13 @@ $(document).ready(function(){
 	    'slideShow'
 	  ]
 	});
+
+	// $( ".fancybox-image-wrap img" ).hover(
+	// 	function() {
+	//     	$(".fancybox-caption").css('visibility', 'visible');
+	//   }
+	  
+	// );
 
 
 });
